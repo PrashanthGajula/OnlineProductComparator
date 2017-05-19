@@ -1,0 +1,12 @@
+/.git
+/bin
+/target
+/.idea
+*.iml
+.project
+.classpath
+/classes
+/bin/
+.settings
+test-output/
+configuration.properties

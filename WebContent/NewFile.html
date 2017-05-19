@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br> 
+  <video id="video1" width="420">
+    <source src="video-0082_online-shopping_480p.mp4" type="video/mp4">
+    <source src="mov_bbb.ogg" type="video/ogg">
+    
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+    if (myVideo.paused) 
+        myVideo.play(); 
+    else 
+        myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script>
+<div style="float: left">
+  <table>
+    <tr>
+      <td>Name</td>
+    </tr>
+  </table>
+</div>
+<div style="float: left">
+  <table>
+    <tr>
+      <td>Name</td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
